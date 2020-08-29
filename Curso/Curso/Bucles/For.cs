@@ -30,7 +30,7 @@ namespace Curso.Bucles
 
                 Console.WriteLine(arrayEmpleados[i].getInfoEmpleados());
 
-                //TODO
+           
             }
         }
 

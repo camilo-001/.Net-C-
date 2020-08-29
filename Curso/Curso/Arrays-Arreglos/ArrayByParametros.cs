@@ -21,7 +21,7 @@ namespace Curso.Arrays_Arreglos
 
                 Console.WriteLine(i);
 
-                //TODO
+              
             }
 
         }

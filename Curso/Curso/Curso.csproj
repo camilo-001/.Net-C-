@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>Curso.Herencia.Herencia2</StartupObject>
+    <StartupObject>Curso.Herencia.Herencia3</StartupObject>
   </PropertyGroup>
 
 </Project>

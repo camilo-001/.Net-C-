@@ -14,9 +14,12 @@ namespace Curso.Herencia
 
             secretariagerencia.getNombrePersona();
             secretariagerencia.Trabajo();
-            secretariagerencia.Carnet();
+             secretariagerencia.Carnet();
             secretariagerencia.LLamadas();
             
+            directorgeneral.Reuniones();
+            secretariagerencia.Reuniones();
+
 
 
         }
@@ -25,7 +28,7 @@ namespace Curso.Herencia
 
     class Empleados {
 
-        string nombrePersona;
+       private string nombrePersona; // private = encapsulada 
 
 
         public Empleados(string nombre) {
@@ -44,6 +47,17 @@ namespace Curso.Herencia
             Console.WriteLine("Poseo un carnet para poder ingresar");
         }
 
+        public virtual void Reuniones() {
+        /* Hemos tomado este metodo y lo hemos copiado de la clase hija director, pero hemos agregado 
+        la palabra virtual y esto quiere decir que todos las clases que hereden de empleados tendran 
+         este metodo y que si alguna otra clase tiene este metodo como propio y con modificaciones como
+         en el caso de la clase Director que tiene su propio metodo Reuniones entonces ese metodo será
+        independiente del de la clase padre Empleados y cunado queramos usar ese metodo dentro de la clase
+        director mostrar un mensaje diferente al de la clase empleados */
+
+
+            Console.WriteLine("Asisto a reuniones");
+        }
 
         public void getNombrePersona() {
 
@@ -65,6 +79,13 @@ namespace Curso.Herencia
             Console.WriteLine("soy el unico que puede tomar decicisones importantes de la empresa ");
         }
 
+        override public void Reuniones() { /* como vemos este metodo propio de la clase director tambien lo tenemos en la superclase
+                                   si no anteponemos la palabra override en este metodo visual nos mostrará una advertencia y con la 
+                                    palabra override indicamos que este metodo es una modificación del original */
+
+            Console.WriteLine("Puedo asistir a reuniones ");
+        }
+
 
     }
 
@@ -77,7 +98,11 @@ namespace Curso.Herencia
         public void LLamadas() {
 
             Console.WriteLine("soy la unica persona que puede recibir llamadas importantes");
+
+            
         }
+
+
     }
 
 
