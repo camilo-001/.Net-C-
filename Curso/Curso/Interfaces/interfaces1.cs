@@ -36,6 +36,13 @@ namespace Curso.Interfaces
      
     }
 
+    interface IAnimalesYDeportes { // Esta interfaz es para digamos determinar que animales son usados en deporte
+
+        string TipoDeporte(); 
+
+        Boolean EsOlimpico(); // Una interfaz puede tener más de un metodoñ. Este metodo es para determinar si el deporte es olimpico  
+    }
+
     class Mamiferos
     {
 
@@ -75,7 +82,7 @@ namespace Curso.Interfaces
    pero cuando esta ya esta heredando de otra clase se agrega coma y el nombre de la interfaz
    Tambien se debe seguir un orden en este caso, siempre van primero los nombres de las clases
    de las cuales se esten heredando y luego las de las interfaces*/
-    class Caballo : Mamiferos, IMamiferosTerrestres 
+    class Caballo : Mamiferos, IMamiferosTerrestres,IAnimalesYDeportes // inidicamos la herencia de la clase mamifero y la implementación de la interfaz
     {
         public Caballo(string nombreCaballo) : base(nombreCaballo)
         { 
@@ -88,11 +95,23 @@ namespace Curso.Interfaces
             Console.WriteLine("soy capaz de galopar");
         }
 
-        public int NumeroPatas() { // Al implementar una interdaz estamos a obligados a implementar su metodo creandolo en la clase en la cual se implemento la interfaz
+        public int NumeroPatas() { // Al implementar una interfaz estamos a obligados a implementar su metodo creandolo en la clase en la cual se implemento la interfaz
 
             return 4; 
 
         }
+
+        public string TipoDeporte() {
+
+            return "carreras";
+        }
+
+        public Boolean EsOlimpico() {
+
+            return true;
+
+        }
+    
     }
 
     class Humano : Mamiferos

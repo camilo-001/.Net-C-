@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\.Net C#\\Curso\\Curso\\Curso.csproj",
+      "projectUniqueName": "C:\\Dev\\.Net C#\\Curso\\Curso\\Curso.csproj",
       "projectName": "Curso",
-      "projectPath": "D:\\Dev\\.Net C#\\Curso\\Curso\\Curso.csproj",
+      "projectPath": "C:\\Dev\\.Net C#\\Curso\\Curso\\Curso.csproj",
       "packagesPath": "C:\\Users\\camil\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\.Net C#\\Curso\\Curso\\obj\\",
+      "outputPath": "C:\\Dev\\.Net C#\\Curso\\Curso\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
